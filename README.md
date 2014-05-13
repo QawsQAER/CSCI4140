@@ -25,4 +25,4 @@ Web Civlization is a web game that imitate the very famouse Civilization Series.
 
 ================================================================================
 
-
+This can be deployed on the openshift site, using php and MySQL

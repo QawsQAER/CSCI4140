@@ -67,11 +67,11 @@
 	}
 	db_drop_table($db,$SQL_DROP_Game,"Game");
 	db_drop_table($db,$SQL_DROP_Cookie,"Cookie");
-	//db_drop_table($db,$SQL_DROP_User,"User");
+	db_drop_table($db,$SQL_DROP_User,"User");
 
 
 //CREATING PART
-	//db_create_table($db,$SQL_CREATE_User,"User");
+	db_create_table($db,$SQL_CREATE_User,"User");
 	db_create_table($db,$SQL_CREATE_Cookie,"Cookie");
 	db_create_table($db,$SQL_CREATE_Game,"Game");
 	db_create_table($db,$SQL_CREATE_ARMYTYPE,"Armytype");
