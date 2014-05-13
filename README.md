@@ -26,3 +26,4 @@ Web Civlization is a web game that imitate the very famouse Civilization Series.
 ================================================================================
 
 This can be deployed on the openshift site, using php and MySQL
+Note that all the passwords are stored as plaintext and (CHAR(32) in database), for the basic setting you may refer to setting/reinit.php ..
