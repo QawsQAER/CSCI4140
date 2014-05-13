@@ -10,8 +10,12 @@ Web Civlization is a web game that imitate the very famouse Civilization Series.
 ================================================================================
 
 /game/net/ is the directory holding implementation of the network connection
-/game/slot/ is the directory holding implementation of the interaction between user and the slot
-/game/panel/ is the directory holding implementation of the interaction between user and the panel
+
+/game/panel/ is the directory holding implementation of the interaction between user and the panel, and the graphical initilization and interaction
+
+/game/game_logic_server/ is the directory holding implementation of the JSON message handling, parsing database data into JSON data, logic computation (does anyone lose the game, does anyone conquer a slot), data storage on the server side
+
+/game/game_logic_client/ is the directory holding the implementtaion of the message forwarding, parsing JSON data into javascript object, and simple damage calculations
 
 /login/ is the directory holding implementation of the login functionality
 
@@ -21,8 +25,4 @@ Web Civlization is a web game that imitate the very famouse Civilization Series.
 
 ================================================================================
 
-TODO: May use HTML5 WebSocket technique to implement the interaction between server and the client
-1. Implement create game/room functionality
-2. Implement join game/room functionality
-3. Implement get game/room information functionality
 
