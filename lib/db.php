@@ -10,6 +10,7 @@ $army_hp = array(5,3,3);
 $army_attack = array(3,4,1);
 $army_gold_cost = array(20,25,15);
 $army_wood_cost = array(20,15,25);
+$APP_NAME = $_ENV["OPENSHIFT_APP_NAME"];
 
 	$DATA_DIR = getenv('OPENSHIFT_DATA_DIR');
 	$RUNTIME_DATA_DIR = getenv('OPENSHIFT_REPO_DIR');
@@ -18,7 +19,7 @@ $army_wood_cost = array(20,15,25);
 	$MYSQL_PWD = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
 	$MYSQL_USR = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
 #$db is the connection to the mysql server
-	$db = mysqli_connect("$MYSQL_HOST:$MYSQL_PORT",$MYSQL_USR,$MYSQL_PWD,"project");
+	$db = mysqli_connect("$MYSQL_HOST:$MYSQL_PORT",$MYSQL_USR,$MYSQL_PWD,$APP_NAME);
 	function show_db_php()
 	{
 		global $DATA_DIR, $RUNTIME_DATA_DIR, $MYSQL_HOST, $MYSQL_PORT, $MYSQL_USR, $MYSQL_PWD;
